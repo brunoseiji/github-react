@@ -13,6 +13,13 @@ export const BackButton = styled(Link) `
     border: 0;
     outline: 0;
     background: transparent;
+    
+    svg {
+
+        path {
+            color: #3d779c;
+        }
+    }
 `;
 
 export const Container = styled.div `
@@ -104,6 +111,26 @@ export const IssuesList = styled.ul `
                 padding: 4px 7px;
                 margin-left: 10px;
             }
+        }
+    }
+`;
+
+export const PageActions = styled.div `
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        outline: 0;
+        border: 0;
+        background: #3d779c;
+        color: #fff;
+        padding: 5px;
+        border-radius: 4px;
+
+        &:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
         }
     }
 `;
