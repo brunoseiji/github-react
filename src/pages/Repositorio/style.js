@@ -123,14 +123,31 @@ export const PageActions = styled.div `
     button {
         outline: 0;
         border: 0;
-        background: #3d779c;
+        background: #0071db;
         color: #fff;
-        padding: 5px;
+        padding: 8px;
         border-radius: 4px;
 
         &:disabled {
             cursor: not-allowed;
             opacity: 0.5;
+        }
+    }
+`;
+
+export const FilterList = styled.div `
+    margin: 15px 0;
+
+    button {
+        outline: 0;
+        border: 0;
+        padding: 8px;
+        border-radius: 4px;
+        margin: 0 3px;
+
+        &:nth-child(${props => props.active + 1}) {
+            background: #0071db;
+            color: #fff;
         }
     }
 `;
